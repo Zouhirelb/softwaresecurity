@@ -1,122 +1,147 @@
 {
-  "title": "Threat Model - Train Commute",
-  "description": "Model of employees working on the train during commute, using MS365",
-  "version": "1.0",
-  "elements": [
-    { "id": "actor1", "type": "actor", "name": "Medewerker" },
-    { "id": "procAuth", "type": "process", "name": "Authenticatie" },
-    { "id": "procDoc", "type": "process", "name": "Document Interactie" },
-    { "id": "procVoIP", "type": "process", "name": "Spraak Communicatie" },
-    { "id": "procM365", "type": "process", "name": "Microsoft 365" },
-    { "id": "storeDocs", "type": "dataStore", "name": "Bedrijfsdocumenten" },
-    { "id": "storeCalls", "type": "dataStore", "name": "Gespreksdata" }
-  ],
-  "connections": [
-    { "id": "flow1", "source": "actor1", "target": "procAuth", "name": "Loginverzoek", "trustBoundaryCrossing": true },
-    { "id": "flow2", "source": "procAuth", "target": "procM365", "name": "Authenticatiecheck", "trustBoundaryCrossing": false },
-    { "id": "flow3", "source": "actor1", "target": "procDoc", "name": "Open document", "trustBoundaryCrossing": true },
-    { "id": "flow4", "source": "procDoc", "target": "procM365", "name": "Document interactie", "trustBoundaryCrossing": false },
-    { "id": "flow5", "source": "actor1", "target": "procVoIP", "name": "Start VoIP call", "trustBoundaryCrossing": true },
-    { "id": "flow6", "source": "procVoIP", "target": "procM365", "name": "Spraakcommunicatie", "trustBoundaryCrossing": false },
-    { "id": "flow7", "source": "procM365", "target": "storeDocs", "name": "Opslaan document", "trustBoundaryCrossing": false },
-    { "id": "flow8", "source": "procM365", "target": "storeCalls", "name": "Call logging", "trustBoundaryCrossing": false }
-  ],
-  "threats": [
-    {
-      "id": "T1",
-      "name": "Fake WiFi Access Point",
-      "description": "Aanvaller zet nep-WiFi op de trein op om inloggegevens te onderscheppen.",
-      "mitigation": "Gebruik VPN, certificaatverificatie en netwerkwhitelisting.",
-      "category": "Spoofing",
-      "elementId": "flow1"
-    },
-    {
-      "id": "T2",
-      "name": "Credential Stuffing",
-      "description": "Gestolen wachtwoorden worden hergebruikt om in te loggen op MS365.",
-      "mitigation": "MFA, detectie van verdachte logins en blokkeer risicovolle IP's.",
-      "category": "Spoofing",
-      "elementId": "procAuth"
-    },
-    {
-      "id": "T3",
-      "name": "Man-in-the-Middle op VoIP",
-      "description": "Verkeer tussen medewerker en Microsoft 365 VoIP-server wordt onderschept en gewijzigd.",
-      "mitigation": "Gebruik van end-to-end encryptie (TLS) en certificaatpinning.",
-      "category": "Tampering",
-      "elementId": "flow6"
-    },
-    {
-      "id": "T4",
-      "name": "Document manipulatie via malware",
-      "description": "Malware op het apparaat verandert documenten voordat ze worden opgeslagen.",
-      "mitigation": "Antivirus, bestandsintegriteitsscanning en sandboxing.",
-      "category": "Tampering",
-      "elementId": "flow4"
-    },
-    {
-      "id": "T5",
-      "name": "Onbetrouwbare logbestanden",
-      "description": "Gebruiker kan bewerkingen ontkennen vanwege ontbreken van logdata.",
-      "mitigation": "Immutabele logging, centraliseer logs in beveiligde SIEM.",
-      "category": "Repudiation",
-      "elementId": "flow8"
-    },
-    {
-      "id": "T6",
-      "name": "Ontkenning van documentwijziging",
-      "description": "Medewerker kan bewerkte documenten ontkennen als niet authentiek.",
-      "mitigation": "Digitale handtekeningen en documenthashes.",
-      "category": "Repudiation",
-      "elementId": "storeDocs"
-    },
-    {
-      "id": "T7",
-      "name": "Afluisteren VoIP",
-      "description": "Eavesdropping op VoIP-gesprekken zonder encryptie.",
-      "mitigation": "Encryptie voor spraakdata en secure RTP.",
-      "category": "Information Disclosure",
-      "elementId": "flow5"
-    },
-    {
-      "id": "T8",
-      "name": "Ongeautoriseerde toegang tot bedrijfsdocumenten",
-      "description": "Datalek wanneer documenten niet correct zijn afgeschermd in cloud.",
-      "mitigation": "Toegangscontroles, versleuteling in rust en in transit.",
-      "category": "Information Disclosure",
-      "elementId": "storeDocs"
-    },
-    {
-      "id": "T9",
-      "name": "DDoS op authenticatieservice",
-      "description": "Aanval op de login endpoint waardoor medewerkers niet kunnen inloggen.",
-      "mitigation": "Rate limiting, WAF en failover mechanismen.",
-      "category": "Denial of Service",
-      "elementId": "procAuth"
-    },
-    {
-      "id": "T10",
-      "name": "Resource Exhaustie in VoIP",
-      "description": "Malafide oproepen verbruiken alle geluidskanalen.",
-      "mitigation": "Limiteer openstaande calls, gebruik QoS.",
-      "category": "Denial of Service",
-      "elementId": "procVoIP"
-    },
-    {
-      "id": "T11",
-      "name": "Privilege Escalation via API",
-      "description": "Aanvaller misbruikt API om hogere rechten te verkrijgen in MS365.",
-      "mitigation": "Least privilege, API-authenticatie en scope-beperkingen.",
-      "category": "Elevation of Privilege",
-      "elementId": "procM365"
-    },
-    {
-      "id": "T12",
-      "name": "Cross-site scripting in documenteditor",
-      "description": "Malafide script in gedeeld document voert acties uit als gebruiker.",
-      "mitigation": "Input sanitization, CSP en secure coding practices.",
-      "category": "Elevation of Privilege",
-      "elementId": "procDoc"
-    }
-  ]
+  "version": "2.4.1",
+  "summary": {
+    "title": "Threat Model - Werken op de trein",
+    "owner": "zouhir",
+    "description": "",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 2,
+        "title": " STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [
+          {
+            "position": {
+              "x": 130,
+              "y": 330
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "f95013e7-d9ab-400f-ac74-ce90a6f681fc"
+                },
+                {
+                  "group": "right",
+                  "id": "169290d5-78b9-4595-83e9-62ff3efefb8a"
+                },
+                {
+                  "group": "bottom",
+                  "id": "18820dec-ad65-44d9-85b3-912750be3479"
+                },
+                {
+                  "group": "left",
+                  "id": "177b0185-bfea-42c1-9004-80d83cebc445"
+                }
+              ]
+            },
+            "id": "3abee343-2468-4dfd-a66c-97a78fcce987",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Actor",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          }
+        ]
+      }
+    ],
+    "diagramTop": 3,
+    "reviewer": "Boeynaems Michael",
+    "threatTop": 0
+  }
 }
