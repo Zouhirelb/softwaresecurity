@@ -19,14 +19,1176 @@
         "cells": [
           {
             "position": {
-              "x": 130,
-              "y": 330
+              "x": 310,
+              "y": 80
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Authenticatie"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ed1dc56-20da-440b-b531-084aed4df32f"
+                },
+                {
+                  "group": "right",
+                  "id": "92e9166d-18fd-471d-a051-30b26315af0b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "76bd617f-a064-4f71-8296-27297fabea10"
+                },
+                {
+                  "group": "left",
+                  "id": "904c99e4-a1ae-4a88-b634-52e866195425"
+                }
+              ]
+            },
+            "id": "5e6afd3b-4df2-4c57-a00e-049d8f0353ea",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "Authenticatie",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "934cc27b-bdcc-44ee-a1f6-779305a8e67a",
+                  "title": "Phishing tijdens het werken",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Werknemers ontvangen phishing-e-mails die ze kunnen openen terwijl ze op de trein werken",
+                  "mitigation": "Implementeer e-mailfiltering, security awareness training, multi-factor authenticatie",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                },
+                {
+                  "id": "a9253865-8d46-4510-bf46-1b84e7b21fcb",
+                  "title": "Misbruik van opgeslagen inloggegevens",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Als een apparaat gestolen wordt of onbeheerd blijft, kunnen opgeslagen inloggegevens worden misbruikt",
+                  "mitigation": "Multi-factor authenticatie, strikte time-outs, vermijd opslag van inloggegevens",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 320,
+              "y": 210
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Documentbewerking"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ed1dc56-20da-440b-b531-084aed4df32f"
+                },
+                {
+                  "group": "right",
+                  "id": "92e9166d-18fd-471d-a051-30b26315af0b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "76bd617f-a064-4f71-8296-27297fabea10"
+                },
+                {
+                  "group": "left",
+                  "id": "904c99e4-a1ae-4a88-b634-52e866195425"
+                }
+              ]
+            },
+            "id": "80295711-ecd5-4c3b-b46d-6366c6e7f31e",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "Documentbewerking",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "6f0fad79-7efe-4d76-a216-fabdc10c3b25",
+                  "title": " Gebrek aan auditlogs",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Werknemers kunnen wijzigingen aanbrengen in documenten zonder adequate logging wanneer offline",
+                  "mitigation": "Lokale logging die synchroniseert bij verbinding, digitale handtekeningen met tijdstempel",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 260,
+              "y": 310
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "VoIP-gesprekken"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ed1dc56-20da-440b-b531-084aed4df32f"
+                },
+                {
+                  "group": "right",
+                  "id": "92e9166d-18fd-471d-a051-30b26315af0b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "76bd617f-a064-4f71-8296-27297fabea10"
+                },
+                {
+                  "group": "left",
+                  "id": "904c99e4-a1ae-4a88-b634-52e866195425"
+                }
+              ]
+            },
+            "id": "e1df52b0-455c-4507-a7f1-4fd2725371b9",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Process",
+              "name": "VoIP-gesprekken",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "57a42743-252b-435a-8084-2b54bff9c511",
+                  "title": "Ongeautoriseerd delen van bedrijfsgegevens",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Werknemers kunnen vertrouwelijke informatie delen tijdens gesprekken en later ontkennen",
+                  "mitigation": "Call logging, DLP-oplossingen, duidelijk beleid voor vertrouwelijke gesprekken",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "5b4f1030-8b75-4aae-930f-a05634936ecb",
+                  "title": "Audio-lek tijdens gesprekken",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Vertrouwelijke gesprekken kunnen worden afgeluisterd door omstanders",
+                  "mitigation": "Noise-cancelling headsets, beperking van gevoelige gesprekken in openbare ruimtes",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 60
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Wi-Fi-verbinding"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ed1dc56-20da-440b-b531-084aed4df32f"
+                },
+                {
+                  "group": "right",
+                  "id": "92e9166d-18fd-471d-a051-30b26315af0b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "76bd617f-a064-4f71-8296-27297fabea10"
+                },
+                {
+                  "group": "left",
+                  "id": "904c99e4-a1ae-4a88-b634-52e866195425"
+                }
+              ]
+            },
+            "id": "a748b86d-9659-461b-9784-46a794a8a86a",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "Wi-Fi-verbinding",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "b36a5bb8-64c4-4866-9871-d960a5ad94c6",
+                  "title": "Nepnetwerk-aanval",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": " Een aanvaller zet een frauduleus Wi-Fi-toegangspunt op dat zich voordoet als een legitiem netwerk om werknemers te misleiden",
+                  "mitigation": " Gebruik altijd VPN, train medewerkers om netwerken te verifiëren, voorkom automatische verbindingen met onbekende netwerken",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "0f8be131-378d-499a-b7d9-3913b1816b9c",
+                  "title": "Onbetrouwbare internetverbinding",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Frequent verlies van verbinding in treinen kan werknemers verhinderen te werken",
+                  "mitigation": "Offline werkfunctionaliteit, robuuste synchronisatiemechanismen, redundante verbindingen",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 770,
+              "y": 310
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Gegevensoverdracht"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "7ed1dc56-20da-440b-b531-084aed4df32f"
+                },
+                {
+                  "group": "right",
+                  "id": "92e9166d-18fd-471d-a051-30b26315af0b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "76bd617f-a064-4f71-8296-27297fabea10"
+                },
+                {
+                  "group": "left",
+                  "id": "904c99e4-a1ae-4a88-b634-52e866195425"
+                }
+              ]
+            },
+            "id": "335f39b0-4c20-4cd0-abc3-b8b1faa31a81",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Gegevensoverdracht",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "d755431b-c05a-4ea1-85a2-588fb35039b9",
+                  "title": "Man-in-the-middle aanval",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Een aanvaller onderschept en wijzigt gegevens die worden verzonden via het openbare netwerk",
+                  "mitigation": "End-to-end encryptie, TLS-certificaatvalidatie, HSTS",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "ccee7bbb-7216-4a5e-9274-9e3c13a0356e",
+                  "title": "Malware-infectie",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "Malware verkregen via onveilige netwerken kan rechten verhogen op bedrijfssystemen",
+                  "mitigation": " Endpoint protection, up-to-date patches, applicatie-whitelisting",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 530,
+              "y": 360
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Microsoft 365"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d07fcc6c-1b61-464b-b912-ef79a459f3bf"
+                },
+                {
+                  "group": "right",
+                  "id": "ca538cc9-326e-4fa6-88f4-03c5f2a183d1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "5eb6c2e3-8a82-4353-b0df-9a731d9fb79c"
+                },
+                {
+                  "group": "left",
+                  "id": "663f3e55-caa6-4548-b3d5-8fc54a3f601d"
+                }
+              ]
+            },
+            "id": "268f2472-944b-4c4d-9c98-9c111b492322",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Store",
+              "name": "Microsoft 365",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 490,
+              "y": 463
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Lokale apparaatopslag"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d07fcc6c-1b61-464b-b912-ef79a459f3bf"
+                },
+                {
+                  "group": "right",
+                  "id": "ca538cc9-326e-4fa6-88f4-03c5f2a183d1"
+                },
+                {
+                  "group": "bottom",
+                  "id": "5eb6c2e3-8a82-4353-b0df-9a731d9fb79c"
+                },
+                {
+                  "group": "left",
+                  "id": "663f3e55-caa6-4548-b3d5-8fc54a3f601d"
+                }
+              ]
+            },
+            "id": "1501d834-de89-4448-ba89-fac95ae2fd33",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Store",
+              "name": "Lokale apparaatopslag",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "514721d3-083f-42e4-ae92-695146796d2b",
+                  "title": "Onbeveiligde documentopslag",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Lokaal opgeslagen documenten kunnen worden gewijzigd wanneer een apparaat onbeheerd wordt achtergelaten",
+                  "mitigation": "Versleuteling van opgeslagen gegevens, automatische vergrendeling, regelmatige synchronisatie met cloud",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 50,
+              "y": 90
             },
             "size": {
               "width": 112.5,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Werknemer"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "15058f39-c00f-4cfb-ac6e-48cf7286cdd2"
+                },
+                {
+                  "group": "right",
+                  "id": "8da1859e-04eb-4b72-9bdd-2b750815ab0d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ebea0fdf-c96b-42c7-8348-2ac71a106f25"
+                },
+                {
+                  "group": "left",
+                  "id": "d538c696-f237-44c2-937c-c761b311d149"
+                }
+              ]
+            },
+            "id": "16103f22-1cfa-4cb5-bbee-cf54ad9eb730",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Werknemer",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "providesAuthentication": false,
+              "threats": [
+                {
+                  "id": "35058173-e2e4-4495-8a38-5b4c6b3bfc04",
+                  "title": "Social engineering in openbare ruimtes",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Aanvallers die zich voordoen als collega's of IT-ondersteuning om inloggegevens te verkrijgen",
+                  "mitigation": "Train werknemers om identiteit te verifiëren, verbied het delen van inloggegevens, duidelijke procedures voor IT-ondersteuning",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 470,
+              "y": 170
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Bedrijfsnetwerk"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -101,47 +1263,803 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "f95013e7-d9ab-400f-ac74-ce90a6f681fc"
+                  "id": "15058f39-c00f-4cfb-ac6e-48cf7286cdd2"
                 },
                 {
                   "group": "right",
-                  "id": "169290d5-78b9-4595-83e9-62ff3efefb8a"
+                  "id": "8da1859e-04eb-4b72-9bdd-2b750815ab0d"
                 },
                 {
                   "group": "bottom",
-                  "id": "18820dec-ad65-44d9-85b3-912750be3479"
+                  "id": "ebea0fdf-c96b-42c7-8348-2ac71a106f25"
                 },
                 {
                   "group": "left",
-                  "id": "177b0185-bfea-42c1-9004-80d83cebc445"
+                  "id": "d538c696-f237-44c2-937c-c761b311d149"
                 }
               ]
             },
-            "id": "3abee343-2468-4dfd-a66c-97a78fcce987",
-            "zIndex": 1,
+            "id": "294cb6b6-54df-4cb8-8ebd-357d12ff5930",
+            "zIndex": 9,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Bedrijfsnetwerk",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
+          },
+          {
+            "position": {
+              "x": 880,
+              "y": 70
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Kwaadwillende actoren"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "15058f39-c00f-4cfb-ac6e-48cf7286cdd2"
+                },
+                {
+                  "group": "right",
+                  "id": "8da1859e-04eb-4b72-9bdd-2b750815ab0d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "ebea0fdf-c96b-42c7-8348-2ac71a106f25"
+                },
+                {
+                  "group": "left",
+                  "id": "d538c696-f237-44c2-937c-c761b311d149"
+                }
+              ]
+            },
+            "id": "bff90532-a938-4a15-ada6-3f28eb53f3f7",
+            "zIndex": 10,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Kwaadwillende actoren",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "loginVerzoek",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "loginVerzoek"
+            ],
+            "id": "3100a7b5-cc86-4cca-b1c8-e646055df8d6",
+            "source": {
+              "x": 160,
+              "y": 110
+            },
+            "target": {
+              "cell": "5e6afd3b-4df2-4c57-a00e-049d8f0353ea",
+              "port": "904c99e4-a1ae-4a88-b634-52e866195425"
+            },
+            "vertices": [
+              {
+                "x": 230,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authenticatiegegevens ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Authenticatiegegevens "
+            ],
+            "id": "7722dc26-8241-4853-adc4-3fec7c99d546",
+            "source": {
+              "cell": "5e6afd3b-4df2-4c57-a00e-049d8f0353ea",
+              "port": "92e9166d-18fd-471d-a051-30b26315af0b"
+            },
+            "target": {
+              "cell": "294cb6b6-54df-4cb8-8ebd-357d12ff5930",
+              "port": "d538c696-f237-44c2-937c-c761b311d149"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Documenttoegang",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "8d7f2b16-f3a1-453d-bd1d-daf8513d3c9d",
+                  "title": "Visuele blootstelling",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Gevoelige informatie kan zichtbaar zijn voor andere passagiers op het scherm",
+                  "mitigation": "Privacyschermen, bewustzijn van omgeving, automatische vergrendeling",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Documenttoe"
+            ],
+            "id": "8fb0c40a-e592-47ee-95db-baa64954934d",
+            "source": {
+              "x": 140,
+              "y": 150
+            },
+            "target": {
+              "cell": "80295711-ecd5-4c3b-b46d-6366c6e7f31e",
+              "port": "904c99e4-a1ae-4a88-b634-52e866195425"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 190
+              },
+              {
+                "x": 240,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Documentgegevens ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Documentgegevens "
+            ],
+            "id": "936d053c-31af-4528-8f9a-a44cb7609db1",
+            "source": {
+              "cell": "80295711-ecd5-4c3b-b46d-6366c6e7f31e",
+              "port": "92e9166d-18fd-471d-a051-30b26315af0b"
+            },
+            "target": {
+              "cell": "268f2472-944b-4c4d-9c98-9c111b492322",
+              "port": "663f3e55-caa6-4548-b3d5-8fc54a3f601d"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "VoIP-communicatie \n",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "VoIP-communicatie \n"
+            ],
+            "id": "a7f79ab8-44e6-4f16-994d-769a2882c98d",
+            "source": {
+              "cell": "16103f22-1cfa-4cb5-bbee-cf54ad9eb730",
+              "port": "ebea0fdf-c96b-42c7-8348-2ac71a106f25"
+            },
+            "target": {
+              "cell": "e1df52b0-455c-4507-a7f1-4fd2725371b9",
+              "port": "904c99e4-a1ae-4a88-b634-52e866195425"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "gesprekgegevens",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "gesprekgegevens"
+            ],
+            "id": "0f5507db-471b-4508-b20c-1fb33096c190",
+            "source": {
+              "cell": "e1df52b0-455c-4507-a7f1-4fd2725371b9",
+              "port": "76bd617f-a064-4f71-8296-27297fabea10"
+            },
+            "target": {
+              "cell": "1501d834-de89-4448-ba89-fac95ae2fd33",
+              "port": "663f3e55-caa6-4548-b3d5-8fc54a3f601d"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 439
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Netwerkgegevens ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Netwerkgegevens "
+            ],
+            "id": "061ef604-69d3-454a-904e-e1c0767584b4",
+            "source": {
+              "cell": "a748b86d-9659-461b-9784-46a794a8a86a",
+              "port": "76bd617f-a064-4f71-8296-27297fabea10"
+            },
+            "target": {
+              "cell": "294cb6b6-54df-4cb8-8ebd-357d12ff5930",
+              "port": "8da1859e-04eb-4b72-9bdd-2b750815ab0d"
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 150
+              },
+              {
+                "x": 710,
+                "y": 180
+              },
+              {
+                "x": 670,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Lokale gegevensopslag ",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Lokale gegevensopslag "
+            ],
+            "id": "d6c00498-18f0-4a18-996c-5bddff72f369",
+            "source": {
+              "cell": "80295711-ecd5-4c3b-b46d-6366c6e7f31e",
+              "port": "76bd617f-a064-4f71-8296-27297fabea10"
+            },
+            "target": {
+              "cell": "1501d834-de89-4448-ba89-fac95ae2fd33",
+              "port": "d07fcc6c-1b61-464b-b912-ef79a459f3bf"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 350
+              },
+              {
+                "x": 420,
+                "y": 410
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Wi-Fi-verbindingsgegevens",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Wi-Fi-verbindingsgegevens"
+            ],
+            "id": "a8e6a9d4-627e-4321-a09c-adfeddf68f98",
+            "source": {
+              "cell": "16103f22-1cfa-4cb5-bbee-cf54ad9eb730",
+              "port": "15058f39-c00f-4cfb-ac6e-48cf7286cdd2"
+            },
+            "target": {
+              "cell": "a748b86d-9659-461b-9784-46a794a8a86a",
+              "port": "7ed1dc56-20da-440b-b531-084aed4df32f"
+            },
+            "vertices": [
+              {
+                "x": 70,
+                "y": 70
+              },
+              {
+                "x": 90,
+                "y": 40
+              },
+              {
+                "x": 180,
+                "y": 40
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Netwerkgegevens",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Netwerkgegevens"
+            ],
+            "id": "9e471745-a604-4f89-ac4b-6a192fe02ed5",
+            "source": {
+              "cell": "a748b86d-9659-461b-9784-46a794a8a86a",
+              "port": "92e9166d-18fd-471d-a051-30b26315af0b"
+            },
+            "target": {
+              "cell": "bff90532-a938-4a15-ada6-3f28eb53f3f7",
+              "port": "d538c696-f237-44c2-937c-c761b311d149"
+            },
+            "vertices": [
+              {
+                "x": 760,
+                "y": 90
+              },
+              {
+                "x": 770,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "aanvallen",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "aanvallen"
+            ],
+            "id": "9b0308bb-627e-44a0-ae4f-65a8aef8272a",
+            "source": {
+              "cell": "bff90532-a938-4a15-ada6-3f28eb53f3f7",
+              "port": "ebea0fdf-c96b-42c7-8348-2ac71a106f25"
+            },
+            "target": {
+              "cell": "335f39b0-4c20-4cd0-abc3-b8b1faa31a81",
+              "port": "92e9166d-18fd-471d-a051-30b26315af0b"
+            },
+            "vertices": [
+              {
+                "x": 900,
+                "y": 150
+              },
+              {
+                "x": 870,
+                "y": 150
+              },
+              {
+                "x": 850,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "onderschepte gegevens",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "onderschepte gegevens"
+            ],
+            "id": "f5be11b3-3504-49b8-a826-29e1a19f94ad",
+            "source": {
+              "cell": "335f39b0-4c20-4cd0-abc3-b8b1faa31a81",
+              "port": "904c99e4-a1ae-4a88-b634-52e866195425"
+            },
+            "target": {
+              "cell": "294cb6b6-54df-4cb8-8ebd-357d12ff5930",
+              "port": "8da1859e-04eb-4b72-9bdd-2b750815ab0d"
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 300
+              },
+              {
+                "x": 740,
+                "y": 280
+              },
+              {
+                "x": 720,
+                "y": 250
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 3,
     "reviewer": "Boeynaems Michael",
-    "threatTop": 0
+    "threatTop": 13
   }
 }
